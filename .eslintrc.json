@@ -1,0 +1,173 @@
+{
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:lodash-fp/recommended",
+    "plugin:unicorn/recommended",
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "script"
+  },
+  "plugins": ["lodash-fp", "promise", "unicorn"],
+  "rules": {
+    "array-bracket-spacing": "off",
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {
+        "requireForBlockBody": false
+      }
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore",
+        "imports": "always-multiline",
+        "objects": "always-multiline"
+      }
+    ],
+    "consistent-return": "off",
+    "func-names": "off",
+    "function-paren-newline": ["error", "consistent"],
+    "generator-star-spacing": ["error", "after"],
+    "global-require": "off",
+    "guard-for-in": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/test/**", "/scripts/"]
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling"],
+          "index"
+        ]
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": "off",
+    "newline-per-chained-call": "off",
+    "no-continue": "off",
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-restricted-syntax": ["error", "ClassDeclaration"],
+    "no-underscore-dangle": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "after-used",
+        "vars": "all"
+      }
+    ],
+    "no-use-before-define": "off",
+    "no-warning-comments": ["error"],
+    "one-var": [
+      "error",
+      {
+        "initialized": "never",
+        "uninitialized": "always"
+      }
+    ],
+    "one-var-declaration-per-line": ["error", "initializations"],
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ],
+    "prefer-rest-params": "off",
+    "promise/always-return": "error",
+    "promise/catch-or-return": "error",
+    "promise/no-native": "off",
+    "promise/param-names": "error",
+    "require-yield": "off",
+    "semi": ["error", "never"],
+    "semi-style": ["error", "first"],
+    "space-unary-ops": [
+      "error",
+      {
+        "nonwords": false,
+        "overrides": {
+          "!": true
+        },
+        "words": true
+      }
+    ],
+    "strict": ["error", "global"],
+    "unicorn/catch-error-name": [
+      "error",
+      {
+        "name": "err"
+      }
+    ],
+    "unicorn/filename-case": "off",
+    "unicorn/throw-new-error": "off",
+    "unicorn/no-fn-reference-in-iterator": "off",
+    "unicorn/new-for-builtins": "off",
+    "unicorn/regex-shorthand": "off",
+    "valid-jsdoc": "error"
+  },
+  "settings": {
+    "lodash": {
+      "pragma": "fp"
+    },
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "."]
+      }
+    }
+  }
+}

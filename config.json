@@ -1,0 +1,6 @@
+{
+  "rapidApiKey": "67b077c3damsh199324313feaac8p15a3d7jsnf998cad20a56",
+  "rapidApiLocationHost": "google-maps-geocoding.p.rapidapi.com",
+  "rapidApiTimezoneHost": "google-maps-time-zone.p.rapidapi.com",
+  "rapidApiWeatherHost": "community-open-weather-map.p.rapidapi.com"
+}
